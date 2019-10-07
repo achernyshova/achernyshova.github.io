@@ -46,6 +46,16 @@
         .linkedin > a {
             color: white;
         }
+        .medium {
+            background-image: url('images/medium.png');
+            background-repeat: no-repeat;
+            padding-left: 30px; 
+            padding-bottom: 20px;
+            padding-right: 30px;
+        }
+        .medium > a {
+            color: white;
+        }
         .email {
             background-image: url('images/mail.png');
             background-repeat: no-repeat;
@@ -55,11 +65,6 @@
         }
         .email > a {
             color: white;
-        }
-
-        #about-me {
-            padding: 50px 15px;
-            text-align: center;
         }
     </style>    
 </head>
@@ -78,35 +83,35 @@
         </div>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about-me">About</a>
+                <a href="#about" style="color: #000">About</a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills" style="color: #000">Skills</a>
             </li>
     
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" style="color: #000">Projects</a>
             </li>
             
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" style="color: #000">Contact</a>
             </li>
         </ul>
     </header>
     <!-- End header -->
 
     <div id="lead">
-        <div id="lead-content">
-            <h1>Antonina Chernyshova</h1>
-            <h2>Data Analyst | Data Scientist | BI Developer</h2>
+        <div id="lead-content" style="width: fit-content">
+            <h1 style="color:#fff; font-size: 3.5em">Antonina Chernyshova</h1>
+            <h2 style="color:#fff; font-size: 2em">Data Analyst | Data Scientist | BI Developer</h2>
             <a href="Resume_ChernyshovaA.pdf" download class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
-        <div id="lead-overlay"></div>
+        <div id="lead-overlay" style="background: rgba(0,0,0,0.15)"></div>
 
         <div id="lead-down">
-            <span>
+            <span style="border: 3px solid #fff">
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
         </div>
@@ -114,18 +119,25 @@
     </div>
     <!-- End #lead -->
 
-    <div id="about-me" class="background-alt">
-        <h2 class="heading">About Me</h2>
-        <div class="container" style="color: #74808a; width: 800px; text-align: justify" >
-
-            Experienced data analyst with a strong background in SQL and Python dedicated to finding actionable business insights from raw data. I strive to improve product performance using statistical modeling and machine learning techniques. <br><br>
+    <div id="about" class="background-alt">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                    <img class="center-block" src="images/tonya.jpeg" style="border-radius: 50%; padding-bottom: 20px;" />
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I am an experienced data analyst with a strong background in SQL and Python dedicated to finding actionable business insights from raw data. I strive to improve product performance using statistical modeling and machine learning techniques. <br><br>
             
             
-            Areas of expertise: Data analysis and visualization, machine learning, data mining, data governance, user behavior analytics including conversion funnels, churn and retention cohorts, LTV models, A/B tests. 
-        
-         </div>
-     </div>
+            Areas of expertise: Data analysis and visualization, machine learning, data mining, data governance, user behavior analytics including conversion funnels, churn and retention cohorts, LTV models, A/B tests. <br><br>
 
+            Currently I am interested in running analytics and machine learning at scale. Read my recent blog posts about it on <a href="https://medium.com/@tonya.chernyshova/">Medium</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- End #about -->
 
@@ -135,19 +147,16 @@
             
             <li>Python</li>
             <li>SQL</li>
-            <li>Scala</li>
-            <li>Spark</li>
-            <li>Tableau</li>
-            <li>Web Scraping</li>
-            <li>Natural Language Processing</li>
             <li>Machine Learning</li>
+            <li>Web Scraping</li>
             <li>Data Visualization</li>
-    
+            <li>Tableau</li>
+            <li>Natural Language Processing</li>
+            <li>AWS</li>
+            <li>Spark</li>
         </ul>
     </div>
     <!-- End #skills -->
-
-
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -155,13 +164,13 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/netflix.jpg"width="260" height="168" />
+                        <img src="images/netflix.jpg" width="260" height="168" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Netflix recommendation system</h3>
                         <p>
-                            Recommendation system trained on a 10k movies subset which was applied to the 500k users activity dataset
+                            Recommendation system trained on a 10k movies subset which was applied to the 500k users activity dataset.
                         </p>
                         <a href="https://github.com/achernyshova/Movie-Recommender-System">View Project</a>
                     </div>
@@ -179,7 +188,7 @@
                     <div class="project-info">
                         <h3>Reddit Classification with NLP</h3>
                         <p>
-                            Collected data by scraping Reddit website and then built a binary classifier to identify where a given post came from
+                            Collected data by scraping Reddit website and then built a binary classifier to identify where a given post came from. Used AWS to run the scripts.
                         </p>
                         <a href="https://github.com/achernyshova/Reddit-NLP-Classification">View Project</a>
                     </div>
@@ -190,13 +199,13 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/ames.jpg"width="260" height="168" />
+                        <img src="images/ames.jpg" width="260" height="168" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Ames House Price Prediction</h3>
                         <p>
-                            The goal for this project to estimate the sales price of houses in Ames, Iowa.
+                            The goal for this project was to estimate the sales price of houses in Ames, Iowa using linear regression techniques.
                         </p>
                         <a href="https://github.com/achernyshova/Ames-House-Price-Prediction">View Project</a>
                     </div>
@@ -206,13 +215,13 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/twitter.jpg"width="260" height="168" />
+                        <img src="images/twitter.jpg" width="260" height="168" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Twitter Data Gathering</h3>
                         <p>
-                            Script for gathering tweets using Twitter API 
+                            Script for gathering tweets by twitter ids from the file using Twitter API. This script was used in a bigger project of identifying natural disaster events based on social media.
                         </p>
                         <a href="https://github.com/achernyshova/Twitter-data-gathering">View Project</a>
                     </div>
@@ -227,33 +236,20 @@
 
     
 
-    <div id="contact">
-    <h2>Contact Me</h2>
-    <br>
+    <div id="contact" style="background: #646464">
+        <h2>Contact Me</h2>
+        <br>
         <span class="github"><a href="https://github.com/achernyshova">GitHub</a></span>
         <span class="linkedin"><a href="https://www.linkedin.com/in/a-chernyshova/">Linkedin</a></span>
+        <span class="medium"><a href="https://medium.com/@tonya.chernyshova/">Medium</a></span>
         <span class="email"><a href="mailto:tonya.chernyshova@gmail.com">tonya.chernyshova@gmail.com</a></span>
+         <div class="top">
+            <span id="to-top" style="border: 3px solid #fff">
+                <i class="fa fa-chevron-up" style="color: #fff" aria-hidden="true"></i>
+            </span>
+        </div>
     </div>
     <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2019
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
